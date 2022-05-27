@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>About</title>
+</head>
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+.wrapper{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.background-color{
+     width: 100%;
+	 min-height: 100vh;
+	 display: flex;
+
+}
+.bg-1{
+	flex: 1;
+	background-color: rgb(10, 39, 14);
+}
+.bg-2{
+	/* flex: 1; */
+	background-color: rgb(163, 236, 240);
+}
+.about-container{
+	width: 85%;
+	min-height: 80vh;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 24px 24px 30px #6d8dad;
+}
+.image-container{
+	flex: 1;
+     display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.image-container img{
+	width: 500px;
+	height: 500px;
+
+
+}
+.text-container{
+	flex: 1;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	
+}
+.text-container h1{
+	font-size: 50px;
+	padding: 10px 0px;
+
+}
+.text-container p{
+	font-size: 22px;
+	padding: 10px 0px;
+
+}
+.text-container a{
+	text-decoration: none;
+	padding: 12px;
+	border: 2px solid rebeccapurple;
+	margin-top: 30px;
+	background-color: rebeccapurple;
+	color: white;
+    font-size: 20px;
+	border-radius: 5px;
+
+}
+.text-container a:hover{
+	background-color: transparent;
+	color: black;
+	border: 2px solid rebeccapurple;
+}
+@media screen and (max-width: 1600){
+	.about-container{
+		width: 90%;
+	}
+	.image-container img{
+		width:400px;
+		height: 400px;
+
+	}
+	.text-container h1{
+		font-size: 50px;
+
+	}
+}
+@media screen and (max-width:1100px){
+	.about-container{ 
+	flex-direction: column;
+	}
+	.text-container{
+		align-items: center;
+	}
+}
+@media screen and (max-width:550px){
+	.image-container img{
+		width: 300px;
+		height: 300px;
+	}
+	.text-container p{
+		font-size: 20px;
+	}
+}
+</style>
+<body>
+	<div class="wrapper">
+		<div class="background-color">
+			<div class="bg-1"></div>
+			<div class="bg-2"></div>
+
+		</div>
+		<div class="about-container">
+			<div class="image-container">
+				<img src="About.jpg" alt="">
+
+			</div>
+			<div class="text-container">
+				<h1>About us</h1>
+				<p>rerum modi tempore culpa perspiciatis dolores et aliquid? Corrupti modi, ut quasi similique molestias adipisci rem non laborum architecto iusto consectetur fugit neque cum reprehenderit, minima quam nesciunt rerum perferendis. Possimus, similique eius tenetur itaque quia voluptatibus cupiditate labore sed natus vel at mollitia qui voluptate aliquid illum aut. Dolorem, doloremque molestias, necessitatibus eum eligendi hic architecto totam soluta aspernatur nihil nisi delectus ea laudantium sapiente sunt? Minus officia voluptate fugiat officiis rem blanditiis sed deserunt tenetur commodi corporis?</p>
+
+				<a href="">Read more</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
